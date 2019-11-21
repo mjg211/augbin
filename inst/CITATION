@@ -1,0 +1,17 @@
+citHeader("To cite augbin in publications please use:")
+
+citEntry(
+  entry       = "Article",
+  key         = "Wason2013",
+  author      = c(as.person("James M. S. Wason"),
+                  as.person("Shaun R. Seaman")),
+  doi         = "10.1002/sim.5867",
+  journal     = "Statistics in Medicine",
+  number      = "26",
+  pages       = "4639--4650",
+  title       = "Using continuous data on tumour measurements to improve inference in phase II cancer studies",
+  url         = "https://doi.org/10.1002/sim.5867",
+  volume      = "32",
+  year        = "2013",
+  textVersion = paste("Wason JMS, Seaman SR (2013) Using continuous data on tumour measurements to improve inference in phase II cancer studies. Statistics in Medicine 32(26):4639-50. DOI: 10.1002/sim.5867.")
+)
