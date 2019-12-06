@@ -1,4 +1,4 @@
-summary_augbin(object) {
+summary_augbin <- function(object) {
   message("  ----------------------------------")
   message("  Results: Augmented binary analysis")
   message("  ----------------------------------")
