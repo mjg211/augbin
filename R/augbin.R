@@ -62,11 +62,6 @@ augbin <- function(data    = build_augbin_data(),
                         as.numeric(as.character(data$treatment)))
   out   <- augbin_ci(model$params, data$continuous,
                      attributes(data)$dichotomisation, model$cov)
-  if (summary) {
-    message("\u2026\u2026completed required calculations.")
-    message("")
-    summary_augbin(output)
-  }
 
   ##### Outputting #############################################################
 
@@ -76,6 +71,11 @@ augbin <- function(data    = build_augbin_data(),
                         inputs     = list(data    = data,
                                           summary = summary))
   class(output) <- c(class(output), "augbin")
+  if (summary) {
+    message("\u2026\u2026completed required calculations.")
+    message("")
+    summary_augbin(output)
+  }
   output
 
 }
